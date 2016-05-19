@@ -32,6 +32,7 @@ Vagrant.configure(VAGRANTFILE_API_VERSION) do |config|
     ansible.limit = "vagrant.react-tutorial"
     ansible.verbose = 'v'
     ansible.sudo = true
+    ansible.tags = ["tutorial"]
   end
 
 end
